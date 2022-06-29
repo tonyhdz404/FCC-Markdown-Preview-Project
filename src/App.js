@@ -5,8 +5,13 @@ function App() {
   const [text, setText] = useState("");
   return (
     <div className="container">
-      <Editor text={text} setText={setText} />
-      <Preview text={text} />
+      <header className="header header--1">
+        <h1>FCC Markdown Challange</h1>
+      </header>
+      <div className="row">
+        <Editor text={text} setText={setText} />
+        <Preview text={text} />
+      </div>
     </div>
   );
 }
